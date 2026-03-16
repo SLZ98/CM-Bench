@@ -18,25 +18,21 @@ Infrared-visible (IR-VIS) feature matching is essential for cross-modality visua
 ### Key Contributions:
 * **Comprehensive Benchmark:** Systematic evaluation of 30 algorithms (spanning sparse, semi-dense, and dense methods) across 4 tasks: Homography, Relative Pose, Geo-localization, and Hard Geo-localization.
 * **ThermoSat Dataset:** A new infrared-satellite dataset featuring **832 manually annotated pairs** captured by a DJI Matrice 4T, covering approximately $35.86 km^2$.
-* **Adaptive Preprocessing:** A lightweight MobileNetV4-based front-end that automatically selects optimal enhancement strategies (e.g., Scharr-LCN, Morph-grad) for each image pair.
 
 ---
 
 ## 📊 Benchmark Overview
-| Category | Representative Methods Evaluated | Best Performers |
-| :--- | :--- | :--- |
-| **Sparse** | SuperPoint, ALIKED, SIFT, RIFT, DeDoDe, etc. | SuperPoint+MINIMA-LG |
-| **Semi-Dense** | LoFTR, ELoFTR, XoFTR, ASpanFormer, etc. | MINIMA(XoFTR) |
-| **Dense** | RoMa, DKM, GIM, MASt3R, etc. | **MINIMA-RoMa**, RoMa |
-
-*Our results demonstrate that **MINIMA-RoMa**, **RoMa**, and **MINIMA-LG** consistently outperform other algorithms across various cross-modal tasks.*
+| Category | Representative Methods Evaluated |
+| :--- | :--- |
+| **Sparse** | SuperPoint, ALIKED, SIFT, RIFT, DeDoDe, etc. |
+| **Semi-Dense** | LoFTR, ELoFTR, XoFTR, ASpanFormer, etc. |
+| **Dense** | RoMa, DKM, GIM, MASt3R, etc. |
 
 ---
 
 ## 📅 TODO List
 - [x] Release ArXiv technical report.
 - [ ] Release **ThermoSat** dataset (Infrared-Satellite pairs with GT correspondences).
-- [ ] Release **Adaptive Preprocessing Front-end** (MobileNetV4 backbone).
 - [ ] Release evaluation scripts and benchmarking tools for all 30 matchers.
 
 ---
